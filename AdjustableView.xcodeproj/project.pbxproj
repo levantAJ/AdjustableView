@@ -10,6 +10,7 @@
 		69FE16B9253BFDDF006C3E5D /* AdjustableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69FE16AF253BFDDF006C3E5D /* AdjustableView.framework */; };
 		69FE16BE253BFDDF006C3E5D /* AdjustableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE16BD253BFDDF006C3E5D /* AdjustableViewTests.swift */; };
 		69FE16C0253BFDDF006C3E5D /* AdjustableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69FE16B2253BFDDF006C3E5D /* AdjustableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69FE16CE253BFF9C006C3E5D /* AdjustableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FE16CD253BFF9C006C3E5D /* AdjustableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		69FE16B8253BFDDF006C3E5D /* AdjustableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdjustableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FE16BD253BFDDF006C3E5D /* AdjustableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustableViewTests.swift; sourceTree = "<group>"; };
 		69FE16BF253BFDDF006C3E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69FE16CD253BFF9C006C3E5D /* AdjustableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				69FE16B2253BFDDF006C3E5D /* AdjustableView.h */,
 				69FE16B3253BFDDF006C3E5D /* Info.plist */,
+				69FE16CD253BFF9C006C3E5D /* AdjustableView.swift */,
 			);
 			path = AdjustableView;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					69FE16AE253BFDDF006C3E5D = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					69FE16B7253BFDDF006C3E5D = {
 						CreatedOnToolsVersion = 12.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FE16CE253BFF9C006C3E5D /* AdjustableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +346,7 @@
 		69FE16C4253BFDDF006C3E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
@@ -357,6 +363,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.AdjustableView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +373,7 @@
 		69FE16C5253BFDDF006C3E5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
@@ -381,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.AdjustableView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +399,7 @@
 		69FE16C7253BFDDF006C3E5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
 				INFOPLIST_FILE = AdjustableViewTests/Info.plist;
@@ -407,6 +418,7 @@
 		69FE16C8253BFDDF006C3E5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
 				INFOPLIST_FILE = AdjustableViewTests/Info.plist;
