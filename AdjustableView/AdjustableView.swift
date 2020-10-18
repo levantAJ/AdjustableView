@@ -12,13 +12,13 @@ open class AdjustableView: UIView {
     public var onDragingEnded: (() -> Void)?
     public var onFrameChanged: ((CGRect) -> Void)?
 
-    lazy var panGesture: UIPanGestureRecognizer = {
+    public lazy var panGesture: UIPanGestureRecognizer = {
         let gesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
         gesture.minimumNumberOfTouches = 1
         return gesture
     }()
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         addGestureRecognizer(panGesture)
     }
