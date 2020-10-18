@@ -32,16 +32,16 @@ import AdjustableView
 ```
 
 ```swift
-class YourView: AdjustableView {
-}
+class YourView: AdjustableView {}
 ```
 
-#### Notify the event changed:
+#### To handle additional tasks when events changed:
 
 ```swift
 yourView.onDragingStarted = {}
-yourView.onFrameChanged = {}
 yourView.onDragingEnded = {}
+yourView.onFrameChanged = { frame in
+}
 ```
 
 ## Author
